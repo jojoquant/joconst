@@ -182,12 +182,12 @@ class TdxMarket:
     with api.connect('59.175.238.38', 7727):
         df1 = api.to_df(api.get_markets())
     """
-    CFFEX:int = 47      # 中金所期货
-    CZCE:int = 28       # 郑州商品
-    DCE:int = 29        # 大连商品
-    SHFE:int = 30       # 上海期货
-    SGE:int = 46        # 上海黄金
-    HKSE:int = 31       # 香港股票
+    CFFEX: int = 47  # 中金所期货
+    CZCE: int = 28  # 郑州商品
+    DCE: int = 29  # 大连商品
+    SHFE: int = 30  # 上海期货
+    SGE: int = 46  # 上海黄金
+    HKSE: int = 31  # 香港股票
 
 
 class TdxCategory:
@@ -199,9 +199,9 @@ class TdxCategory:
         df1 = api.to_df(api.get_markets())
         df3 = api.to_df(api.get_instrument_quote_list(30, 3, count=100))
     """
-    CFFEX:int = 3     # 中金所期货
-    CZCE:int = 3      # 郑州商品
-    DCE:int = 3       # 大连商品
-    SHFE:int = 3      # 上海期货
-    SGE:int = 11      # 上海黄金
-    HKSE:int = 2      # 香港股票
+    CFFEX: int = 3  # 中金所期货
+    CZCE: int = 3  # 郑州商品
+    DCE: int = 3  # 大连商品
+    SHFE: int = 3  # 上海期货
+    SGE: int = 11  # 上海黄金
+    HKSE: int = 2  # 香港股票
