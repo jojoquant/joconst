@@ -6,3 +6,15 @@
 ```
 pip install joconst
 ```
+
+### poetry instruction
+```
+# update dependencies
+poetry update
+
+# build
+poetry build
+
+# publish
+poetry publish
+```
