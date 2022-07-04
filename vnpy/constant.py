@@ -127,19 +127,6 @@ class Exchange(Enum):
     OTC = "OTC"             # OTC Product (Forex/CFD/Pink Sheet Equity)
     IBKRATS = "IBKRATS"     # Paper Trading Exchange of IB
 
-    BITMEX = "BITMEX"
-    OKEX = "OKEX"
-    HUOBI = "HUOBI"
-    BITFINEX = "BITFINEX"
-    BINANCE = "BINANCE"
-    BYBIT = "BYBIT"
-    COINBASE = "COINBASE"
-    DERIBIT = "DERIBIT"
-    GATEIO = "GATEIO"
-    BITSTAMP = "BITSTAMP"
-    DYDX = "DYDX"
-    FTX = "FTX"
-
     # Special Function
     LOCAL = "LOCAL"         # For local generated data
 
@@ -159,52 +146,7 @@ class Interval(Enum):
     Interval of bar data.
     """
     MINUTE = "1m"
-    #####################
-    # fangyang add
-    MINUTE_5 = "5m"
-    MINUTE_15 = "15m"
-    MINUTE_30 = "30m"
-    #####################
     HOUR = "1h"
     DAILY = "d"
     WEEKLY = "w"
-    ####################
-    # fangyang add
-    MONTHLY = "mon"
-    SEASONAL = "ss"
-    YEARLY = "y"
-    ####################
     TICK = "tick"
-
-
-class TdxMarket:
-    """
-    from jotdx.exhq import TdxExHq_API
-    api = TdxExHq_API()
-    # 59.175.238.38 : 7727
-    with api.connect('59.175.238.38', 7727):
-        df1 = api.to_df(api.get_markets())
-    """
-    CFFEX: int = 47  # 中金所期货
-    CZCE: int = 28  # 郑州商品
-    DCE: int = 29  # 大连商品
-    SHFE: int = 30  # 上海期货
-    SGE: int = 46  # 上海黄金
-    HKSE: int = 31  # 香港股票
-
-
-class TdxCategory:
-    """
-    from jotdx.exhq import TdxExHq_API
-    api = TdxExHq_API()
-    # 59.175.238.38 : 7727
-    with api.connect('59.175.238.38', 7727):
-        df1 = api.to_df(api.get_markets())
-        df3 = api.to_df(api.get_instrument_quote_list(30, 3, count=100))
-    """
-    CFFEX: int = 3  # 中金所期货
-    CZCE: int = 3  # 郑州商品
-    DCE: int = 3  # 大连商品
-    SHFE: int = 3  # 上海期货
-    SGE: int = 11  # 上海黄金
-    HKSE: int = 2  # 香港股票
