@@ -3,6 +3,10 @@ from jotdx.params import TDXParams
 
 # 和下面 key 保持一致
 TDX_JONPY_MARKET_MAP = {
+    TdxMarket.SZSE: Exchange.SZSE,
+    TdxMarket.SSE: Exchange.SSE,
+    TdxMarket.BSE: Exchange.BSE,
+
     TdxMarket.DCE: Exchange.DCE,
     TdxMarket.SGE: Exchange.SGE,
     TdxMarket.CFFEX: Exchange.CFFEX,
@@ -29,6 +33,10 @@ INTERVAL_TDX_MAP = {
 TDX_INTERVAL_MAP = {v: k for k, v in INTERVAL_TDX_MAP.items()}
 
 EXCHANGE_NAME_MAP = {
+    Exchange.SZSE: "深圳证券",
+    Exchange.SSE: "上海证券",
+    Exchange.BSE: "北京证券",
+
     Exchange.SHFE: "上海期货",
     Exchange.DCE: "大连商品",
     Exchange.CZCE: "郑州商品",

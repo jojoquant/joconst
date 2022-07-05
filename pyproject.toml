@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "joconst"
-version = "0.1.12"
+version = "0.1.13"
 description = ""
 authors = ["FangyangJz <fangyang.jing@hotmail.com>"]
 
