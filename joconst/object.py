@@ -38,14 +38,14 @@ class TickData(BaseData):
     exchange: Exchange
     datetime: datetime
 
-    name: str = ""
-    volume: float = 0.0
-    turnover: float = 0.0
-    open_interest: float = 0.0
-    last_price: float = 0.0
-    last_volume: float = 0.0
-    limit_up: float = 0.0
-    limit_down: float = 0.0
+    name: str = ""        # 股票中文名/期货合约中文名/代码
+    volume: float = 0.0     # 累计成交量
+    turnover: float = 0.0    # 成交金额
+    open_interest: float = 0.0  # 持仓量
+    last_price: float = 0.0     # 最新价
+    last_volume: float = 0.0    # 当前tick的瞬时成交量
+    limit_up: float = 0.0     # 涨停价
+    limit_down: float = 0.0   # 跌停价
 
     open_price: float = 0.0
     high_price: float = 0.0
