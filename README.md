@@ -1,5 +1,6 @@
 ### Changelog 
 
+0.1.14 TickData add server_time_str field
 0.1.12 Sync to VeighNa 2022/6/25 version
 
 ### Installation

@@ -78,6 +78,8 @@ class TickData(BaseData):
 
     localtime: datetime = None
 
+    server_time_str: str = ""   # used for jotdx
+
     def __post_init__(self) -> None:
         """"""
         self.vt_symbol: str = f"{self.symbol}.{self.exchange.value}"
